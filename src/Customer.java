@@ -23,11 +23,14 @@ public class Customer {
                 if  (!lastName.isEmpty()) break;
                 System.out.println("Lastname cannot be empty. Please try again.:");
                 System.out.printf("Enter the last name of the customer %d: ", i + 1);
+
+
             }
             customer[i] = firstName + " " + lastName;
         }
     }
     public void displayCustomerData() {
+        System.out.println("Customer List:");
         for(String name:customer){
             System.out.println(name);
         }
